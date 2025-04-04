@@ -1,0 +1,11 @@
+C:\Users\gabri\Desktop\Courses\Semester 4\COMP 367 DevOps Implementation\Lab #4\StringExtensions\bin\Debug\net8.0\StringExtensions.deps.json
+C:\Users\gabri\Desktop\Courses\Semester 4\COMP 367 DevOps Implementation\Lab #4\StringExtensions\bin\Debug\net8.0\StringExtensions.dll
+C:\Users\gabri\Desktop\Courses\Semester 4\COMP 367 DevOps Implementation\Lab #4\StringExtensions\bin\Debug\net8.0\StringExtensions.pdb
+C:\Users\gabri\Desktop\Courses\Semester 4\COMP 367 DevOps Implementation\Lab #4\StringExtensions\obj\Debug\net8.0\StringExtensions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\Courses\Semester 4\COMP 367 DevOps Implementation\Lab #4\StringExtensions\obj\Debug\net8.0\StringExtensions.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\Courses\Semester 4\COMP 367 DevOps Implementation\Lab #4\StringExtensions\obj\Debug\net8.0\StringExtensions.AssemblyInfo.cs
+C:\Users\gabri\Desktop\Courses\Semester 4\COMP 367 DevOps Implementation\Lab #4\StringExtensions\obj\Debug\net8.0\StringExtensions.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\Courses\Semester 4\COMP 367 DevOps Implementation\Lab #4\StringExtensions\obj\Debug\net8.0\StringExtensions.dll
+C:\Users\gabri\Desktop\Courses\Semester 4\COMP 367 DevOps Implementation\Lab #4\StringExtensions\obj\Debug\net8.0\refint\StringExtensions.dll
+C:\Users\gabri\Desktop\Courses\Semester 4\COMP 367 DevOps Implementation\Lab #4\StringExtensions\obj\Debug\net8.0\StringExtensions.pdb
+C:\Users\gabri\Desktop\Courses\Semester 4\COMP 367 DevOps Implementation\Lab #4\StringExtensions\obj\Debug\net8.0\ref\StringExtensions.dll
