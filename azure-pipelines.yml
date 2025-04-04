@@ -40,5 +40,5 @@ steps:
   displayName: 'Push to Azure Artifacts feed'
   inputs:
     command: 'push'
-    publishVstsFeed: 'StringLibraryFeed'  # Feed name must match exactly
-    searchPatternPush: '$(outputDir)/*.nupkg'
+    packagesToPush: '$(outputDir)/*.nupkg'
+    publishVstsFeed: 'gbeharr2/StringLibraryLab4/StringLibraryFeed'
