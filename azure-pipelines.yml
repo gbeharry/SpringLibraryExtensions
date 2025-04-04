@@ -1,0 +1,44 @@
+trigger:
+  - main
+
+pool:
+  name: Default  # This uses your self-hosted agent pool
+
+variables:
+  buildConfiguration: 'Release'
+  outputDir: '$(Build.ArtifactStagingDirectory)/nuget'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '8.x'
+    installationPath: $(Agent.ToolsDirectory)/dotnet
+
+- task: DotNetCoreCLI@2
+  displayName: 'Restore NuGet packages'
+  inputs:
+    command: 'restore'
+    projects: '**/*.csproj'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build solution'
+  inputs:
+    command: 'build'
+    projects: '**/StringExtensionsLibrary.csproj'
+    arguments: '--configuration $(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Pack NuGet package'
+  inputs:
+    command: 'pack'
+    packagesToPack: '**/StringExtensionsLibrary.csproj'
+    configuration: '$(buildConfiguration)'
+    outputDir: '$(outputDir)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Push to Azure Artifacts feed'
+  inputs:
+    command: 'push'
+    publishVstsFeed: 'StringLibraryFeed'  # Feed name must match exactly
+    searchPatternPush: '$(outputDir)/*.nupkg'
